@@ -1,0 +1,9 @@
+:host {
+    background-color: #FFFFFF;
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    // align-items: center;
+    flex-wrap: wrap;
+}

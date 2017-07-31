@@ -1,0 +1,12 @@
+
+
+<pokedex-loading *ngIf="loading; else pokeList"></pokedex-loading>
+
+<ng-template #pokeList >
+<a *ngFor="let entry of pokedexEntries" [routerLink]="['/pokedex/pokemon', entry.entry_number]" class="pokemon-list-entry vertically-center">
+    <div>  
+      <img src="assets/sprites/{{entry.entry_number}}.png" width=40 height=40>
+    </div>
+    <h3 class="pokemon-list-entry__title"> {{entry.pokemon_species.name}} </h3>
+</a>
+</ng-template>

@@ -1,0 +1,37 @@
+@import '../../../mixins';
+
+// Styles the host element of the component
+:host {
+    background-color: #FFFFFF;
+    //max-height: calc(100% - 80px);
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow-y: scroll;
+    @include flexbox;
+    // align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.pokemon-list-entry {
+    background-color: white;
+    flex-basis: 25%;
+    height: 150px;
+    @include flexbox;
+    flex-direction: column;
+}
+.pokemon-list-entry:hover {
+    color: #5CC6E0;
+    cursor: pointer;
+}
+
+.pokemon-list-entry__title {
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.pokemon-list-entry__image-container {
+    align-content: center;
+    height: 100%;
+}
+

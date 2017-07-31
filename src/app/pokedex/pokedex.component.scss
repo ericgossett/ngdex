@@ -1,0 +1,61 @@
+@import '../../mixins';
+
+ @import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+.pokedex {
+    height: 80vh;
+    width: 70%;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    @include box-shadow(0px, 0px, 10px, rgba(50,50,93,.1), false);
+    // border: 5px solid #E84A44;
+    font-family: 'VT323', monospace;
+}
+
+.pokedex__top-bar {
+    background-color: #E84A44;
+    color: #fff;
+    height: 60px;
+    @include flexbox;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.pokedex__blue-circle {
+    background-color: #5CC6E0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #F5F5F5;
+}
+
+.pokedex__small-circle-container {
+    height: 100%;
+    @include flexbox;
+    margin-left: 5px;
+}
+
+.pokedex__small-circle {
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px 7px;
+    border: 1px solid #424242;
+}
+
+.pokedex__search-container {
+    margin-left: auto;
+}
+
+.pokedex__search-input {
+    color: #FDF3F2;
+    background-color: #EA5B55;
+    border: None;
+    font-size: 18px;
+    padding: 10px 5px;
+    font-family: 'VT323', monospace;
+}

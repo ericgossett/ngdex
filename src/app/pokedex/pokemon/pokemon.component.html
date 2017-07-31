@@ -1,0 +1,5 @@
+
+<pokedex-loading *ngIf="loading; else pokeInfo"></pokedex-loading>
+ <ng-template #pokeInfo>
+  pokemon {{pokemon.id}}
+ </ng-template>

@@ -1,0 +1,19 @@
+<div class="vertically-center" style="height:100vh">
+    <div class="pokedex">
+        <div class="pokedex__top-bar">
+            <div class="pokedex__blue-circle"></div>
+            <div class="pokedex__small-circle-container">
+                <div class="pokedex__small-circle" style="background-color:#E42821"></div>
+                <div class="pokedex__small-circle" style="background-color:#F9F35F"></div>
+                <div class="pokedex__small-circle" style="background-color:#44E89C"></div>
+            </div>
+            <div class="pokedex__search-container">
+                <input #searchbox (keyup)="search(searchbox.value)" type="text" class="pokedex__search-input" value="Search...">
+            </div>
+        </div>
+
+        <!--<app-pokemon-list class="pokedex__window"></app-pokemon-list>-->
+        <router-outlet></router-outlet>
+
+    </div>
+</div>
