@@ -1,5 +1,24 @@
 
 <pokedex-loading *ngIf="loading; else pokeInfo"></pokedex-loading>
  <ng-template #pokeInfo>
-  pokemon {{pokemon.id}}
+    <div class="pokemon-title">
+        <h1> {{pokemon.names[0].name}} </h1>
+        <p> {{pokemon.genera[0].genus}} </p>
+    </div>
+    <div class="image-container">
+        <div class="image-container__image">
+            <h3> Front </h3>
+            <img src="assets/sprites/{{pokemon.id}}.png" width=100 height=100>
+        </div>
+        <div class="image-container__image">
+            <h3> Back </h3>
+            <img src="assets/sprites/back/{{pokemon.id}}.png" width=100 height=100>
+        </div>
+        <p>No. {{pokemon.id}}</p>
+    </div>
+    <div class="flavor-text">
+        <p>
+            {{pokemon.flavor_text_entries[pokemon.flavor_text_entries.length - 1].flavor_text}}
+        </p>
+    </div>
  </ng-template>
