@@ -19,7 +19,7 @@ interface PokedexEntry {
 
 @Injectable()
 export class PokedexService {
-  pokedex_endpoint = 'http://pokeapi.co/api/v2/pokedex/2/';
+  pokedex_endpoint = 'https://pokeapi.co/api/v2/pokedex/2/';
   pokemon_endpoint = 'https://pokeapi.co/api/v2/pokemon-species/';
   constructor(private http: Http) {}
 
