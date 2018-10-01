@@ -1,28 +1,26 @@
-# Ngdex
+# NGDEX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+![](./images/pokeball.png)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ As anyone raised in the 90's would tell you, we LOVE Pokémon! So in order to become familiar with Angular and RxJS I created a simple Pokédex app for the original 151. The application retrieves its data from the [Pokéapi](https://pokeapi.co/) and the sprites where downloaded from [here](https://veekun.com/dex/downloads).
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+After loading users will see a list of all the original 151 pokémon located at the /pokedex route.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+![](./images/pokelist.png)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+From here one may also search for a pokémon:
 
-## Running end-to-end tests
+![](./images/pokesearch.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+Clicking on a spite will route to the pokémon page e.g. /pokemon/1
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![](./images/lax.png)
+
+
+This project was entirely an exercise to get acquainted with Angular. After building this app I can conclude that for me Angular is too opinionated. However, I can see the appeal for larger team projects where this level of constraint is beneficial. For instance it is very nice having the router and HTTP lib, state management all included. Coming from React, it saves the trouble of having to decide what library to use (even though nowadays things have kind of settled on Redux, Axios and React Router). Finally, I must say that I really like the RxJS. Observables are very powerful and I hope I can have a chance to use the library in a future project.
+
